@@ -1,0 +1,20 @@
+server:
+  port: 8887
+
+
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: gzdzssredispassword
+  application:
+    name: resourcehserver
+
+gzdzss:
+  security:
+    ## jwt 签名 需要与 authserver保持一致
+    signing-key: gzdzssSigning
+    ## 不需要鉴权的uri
+    ignore-uris: /aa,/bb
+

@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+  servlet:
+    context-path: /auth
+
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: gzdzssredispassword
+  application:
+    name: authserver
+
+gzdzss:
+  security:
+    ## jwt 签名
+    signing-key: gzdzssSigning
+    ## 不需要鉴权的uri
+    ignore-uris: /aa,/bb
+    ## 默认过期时间
+    auth-expires-in-seconds: 43200
+
